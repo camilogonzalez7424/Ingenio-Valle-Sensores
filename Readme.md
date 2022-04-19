@@ -6,6 +6,8 @@
 
 - **!Here Link!: [Documentation](https://github.com/camilogonzalez7424/Ingenio-Valle-Sensores/tree/master/docs)**
 
+- **!Here Link!: [Figma](https://www.figma.com/proto/RTLbHctPRoHYyLMmkJBvc1/Desing-Ingenio?node-id=49%3A2&scaling=contain&page-id=0%3A1&starting-point-node-id=49%3A2&show-proto-sidebar=1)**
+
 
 ## <b> _Built with_ </b> 🛠️
 
