@@ -1,0 +1,295 @@
+.styles {
+    background-image: url('/frontend/img/fondo.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 105vh;    
+    overflow: hidden;
+  
+}
+
+#logo{
+    height: 250px;
+    width: 250px;
+
+    position: absolute;
+    margin-left: 60px;
+}
+
+.user {
+    vertical-align: bottom;
+    position: relative;
+    top: 250px;
+    left: 50px;
+
+   }
+   
+   .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+   }
+   
+   .input:focus {
+    outline: none;
+   }
+   
+   label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .input:focus ~ label, .input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #ae00ff;
+   }
+   
+   .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+   }
+   
+   .bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #ae00ff;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .bar:before {
+    left: 50%;
+   }
+   
+   .bar:after {
+    right: 50%;
+   }
+   
+   .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+   }
+   
+   .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+   }
+   
+   .input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+   }
+   
+   @keyframes inputHighlighter {
+    from {
+     background: #ae00ff;
+    }
+   
+    to {
+     width: 0;
+     background: transparent;
+    }
+   }
+
+
+   .pass {
+    vertical-align: bottom;
+    position: relative;
+    top: 300px;
+    left: 50px;
+
+    
+   }
+
+   /*________________________________________________*/
+
+.btn{
+    background-image:url('/frontend/img/icons/user.png');
+          background-repeat:no-repeat;
+          height:60px;
+          width:160px;
+          background-size: 50px 50px;
+          background-position:left;
+          margin: 340px 100px 100px 200px;
+  }
+  
+  button {
+    
+    position: relative;
+    padding: 1em 1.8em;
+    margin: 0px 40px 0px 0px;
+    outline: none;
+    border: 1px solid #303030;
+    background: #212121;
+    color: #ae00ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: right;
+   }
+   
+   button:hover {
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.6s;
+   }
+   
+   button span {
+    position: absolute;
+   }
+   
+   button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ae00ff);
+   }
+   
+   button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+   }
+   
+   button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #001eff);
+   }
+   
+   button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+   }
+   
+   button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ae00ff);
+   }
+   
+   button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+   }
+   
+   button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #001eff);
+   }
+   
+   button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+   }
+   
+   button:active {
+    background: #ae00af;
+    background: linear-gradient(to top right, #ae00af, #001eff);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    transition: 0.1s;
+   }
+   
+   button:active span:nth-child(1) 
+   span:nth-child(2) 
+   span:nth-child(2) 
+   span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+   }
+   
+  
+  
+  
+  
+  
+  
+.boton{
+    
+  
+    height: 100px;
+    width: 60px;
+    margin: 0 25px;
+    overflow: hidden;
+    color: #000;
+  
+    background: #000;
+    border-radius: 80px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+   }
+  
+  
+  .boton:hover{
+    width: 200px;
+    overflow: visible;
+    color: #fff;
+  }
+  
+  .boton:nth-child(1):hover .icon{
+    background-color:#1877f2;
+  
+  }
+  
+  .boton:nth-child(2):hover .icon{
+    background-color: #25D366;
+   
+  }
+  
+  .boton:nth-child(3):hover .icon{
+    background-color: #000;
+   
+  }   
+
+
+
+  /*___________________________________________________*/
+
+
+  .back{
+    background-image:url('/frontend/img/icons/left-arrow.png');
+          background-repeat:no-repeat;
+          height:60px;
+          width:50px;
+          background-size: 50px 50px;
+          background-position:center;
+         /* margin: 340px 100px 100px 640px;*/
+         position: absolute;
+         margin-top: 420px;
+         margin-left: 750px;
+          
+  }
