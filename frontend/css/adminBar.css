@@ -1,0 +1,113 @@
+@import url('https://fonts.google.com/specimen/Pontano+Sans?query=pontano');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #86228f41;
+}
+
+.wrapper .sidebar{
+    background: rgba(0, 0, 0, 0.753);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+/*Parte top-palabra menu e icono menu*/
+
+.wrapper .sidebar .menuImage{
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.wrapper .sidebar .menuImage img{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.wrapper .sidebar .menuImage h3{
+    color: #ffffff;
+    margin: 10px 5px 5px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+/*****************************************/
+
+
+/*Logo Bot Side*/
+.wrapper .sidebar ul li .logoImageMenu{
+    margin-top: 45px;
+    margin-bottom: 55px;
+    margin-left: 45px;
+    text-align: center;
+}
+
+.wrapper .sidebar ul li .logoImageMenu img{
+    display: block;
+    width: 160px;
+    height: 190px;
+    margin: 0;
+}
+/*****************************************/
+
+
+/*Iconos del menu y textos del menu*/
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #000000;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    display: block;
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #ffffff;
+
+    background:rgba(0, 0, 0, 0.699);
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #ffffff;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+/*****************************************/
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+}
