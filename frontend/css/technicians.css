@@ -43,7 +43,7 @@ body,
     width: 600px;
     height: 500px;
     margin: auto;
-    background: linear-gradient(to top left, #c985de, #cbb9da);
+    background: linear-gradient(to top left, #a86fb9, #d4abf5);
     box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
     transition: all 500ms ease;
     position: relative;
