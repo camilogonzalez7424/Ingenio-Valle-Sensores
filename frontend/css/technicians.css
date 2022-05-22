@@ -43,7 +43,7 @@ body,
     width: 600px;
     height: 500px;
     margin: auto;
-    background: #fff;
+    background: linear-gradient(to top left, #c985de, #cbb9da);
     box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
     transition: all 500ms ease;
     position: relative;
@@ -112,7 +112,7 @@ body,
 
 .rectangletwo {
     border-radius: 20px;
-    background-color: white;
+    background-color: #ffff;
     border: 1px solid black;
     width: 560px;
     height: 275px;
