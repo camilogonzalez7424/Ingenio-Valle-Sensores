@@ -1,19 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-/*Còdigos universales de la pàgina*/
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-
-
-/*Còdigo opcional - Fondo de la pàgina*/
-
-
-/*---*/
 
 body,
 .modal {
@@ -24,26 +15,11 @@ body,
     align-items: center;
 }
 
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    transition: all 500ms ease;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#btn-modal:checked~.modal {
-    opacity: 1;
-    visibility: visible;
-}
-
 .contenedor {
     width: 600px;
     height: 500px;
     margin: auto;
-    background: linear-gradient(to top left, #a86fb9, #d4abf5);
+    background: linear-gradient(to top left, #a560b9, #eadef3, #b796d8);
     box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
     transition: all 500ms ease;
     position: relative;
@@ -118,4 +94,19 @@ body,
     height: 275px;
     margin-top: 20px;
     margin-left: 10px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-modal:checked~.modal {
+    opacity: 1;
+    visibility: visible;
 }
