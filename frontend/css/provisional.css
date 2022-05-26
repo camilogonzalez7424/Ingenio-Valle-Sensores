@@ -16,10 +16,10 @@ body,
 }
 
 .contenedor {
-    width: 600px;
-    height: 500px;
+    width: 705px;
+    height: 371px;
     margin: auto;
-    background: linear-gradient(to top left, #a560b9, #eadef3, #b796d8);
+    background: url("/frontend/img/backgroundText2.jpg");
     box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
     transition: all 500ms ease;
     position: relative;
@@ -76,24 +76,14 @@ body,
     }
 }
 
-.rectangle {
-    border-radius: 20px;
-    background-color: white;
-    border: 1px solid black;
-    width: 300px;
-    height: 160px;
-    margin-top: 10px;
-    margin-left: 150px;
-}
-
 .rectangletwo {
     border-radius: 20px;
     background-color: #ffff;
     border: 1px solid black;
-    width: 560px;
-    height: 275px;
-    margin-top: 20px;
-    margin-left: 10px;
+    width: 650px;
+    height: 180px;
+    margin-top: 100px;
+    margin-left: 20px;
 }
 
 .modal {
