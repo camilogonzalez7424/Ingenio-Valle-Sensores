@@ -81,8 +81,8 @@ body,
     background-color: #ffff;
     border: 1px solid black;
     width: 650px;
-    height: 180px;
-    margin-top: 100px;
+    height: 200px;
+    margin-top: 90px;
     margin-left: 20px;
 }
 
@@ -99,4 +99,9 @@ body,
 #btn-modal:checked~.modal {
     opacity: 1;
     visibility: visible;
+}
+
+.at {
+    align-items: center;
+    border-radius: 8px;
 }
