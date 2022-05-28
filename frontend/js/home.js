@@ -1,7 +1,7 @@
 
 
  loginPage = () =>{
-    window.location.href = '/frontend/login.html';
+    window.location.href = '/Ingenio-Valle-Sensores/frontend/login.html';
     
 }
 
