@@ -115,7 +115,7 @@
   
   /* Section Images */ 
   section#home {
-    background-image: url('/frontend/img/fondo.png');
+    background-image: url('/Ingenio-Valle-Sensores/frontend/img/fondo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
