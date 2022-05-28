@@ -1,0 +1,18 @@
+#Files of vscode
+.vscode/*
+
+#git files
+#.gitignore
+
+#Files of IntelliJ IDEA
+.idea/*
+IngenioValleSensors.iml
+
+#Files of Eclipse IDE
+.settings/*
+.classpath
+.project
+
+#Bin files
+bin/*
+.class/*
