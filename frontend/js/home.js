@@ -1,7 +1,7 @@
 
 
  loginPage = () =>{
-    window.location.href = 'login.html';
+    window.location.href = 'frontend/login.html';
     
 }
 
