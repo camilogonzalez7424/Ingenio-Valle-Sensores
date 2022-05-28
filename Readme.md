@@ -27,7 +27,7 @@
 
 
 ## <b> _Made by_ </b>
-### <b> 😊😊 _**Trianix's sons:**_ 😊😊 </b>
+<b> 😊😊 _**Trianix's sons:**_ 😊😊 </b>
 
 + [Nicolás Gómez Botero](https://github.com/nicolasg1911 "Nicolás G.")
 + [Camilo González Velasco](https://github.com/camilogonzalez7424 "Camilo G.")
