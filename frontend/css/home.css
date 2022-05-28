@@ -25,7 +25,7 @@
 
   .containerText{
    /* background-image: url('/frontend/img/backgroundText.jpg');*/
-   background-image: url('/frontend/img/backgroundText.jpg');
+   background-image: url('/IngenioValleSensors/frontend/img/backgroundText.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%; 
@@ -113,9 +113,9 @@
     font-size: 4rem;
   }
   
-  /* Section Images */
+  /* Section Images */ 
   section#home {
-    background-image: url('frontend/img/fondo.png');
+    background-image: url('/IngenioValleSensors/frontend/img/fondo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,7 +124,7 @@
 }
   
   section#about {
-    background-image: url('/frontend/img/fondo_inv.png');
+    background-image: url('/IngenioValleSensors/frontend/img/fondo_inv.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,7 +133,7 @@
   }
   
   section#contact {
-    background-image: url('/frontend/img/fondo.png');
+    background-image: url('/IngenioValleSensors/frontend/img/fondo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,7 +146,7 @@
 
 
 .btn{
-  background-image:url('/frontend/img/icons/user.png');
+  background-image:url('/IngenioValleSensors/frontend/img/icons/user.png');
         background-repeat:no-repeat;
         height:60px;
         width:160px;
