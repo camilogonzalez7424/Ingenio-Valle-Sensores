@@ -13,6 +13,10 @@
 
 
 + [JavaScript](https://www.javascript.com/) - Programming language used.
++ [MySql](https://www.mysql.com/) - Database used.
++ [Node.js](https://nodejs.org/es/) -  Cross-platform runtime environment used.
++ [Heroku](https://www.heroku.com/home) - Cloud computing services platform used for the backend.
++ [Github Pages](https://pages.github.com/) - Static site hosting service that takes the HTML, CSS and JavaScript files used for the frontend.
 + [Visual Studio Code](https://code.visualstudio.com/) - IDE in which the base code was worked.
 
 ## <b> _Overview_ </b> 💻🕹️
@@ -38,6 +42,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
+<img src="frontend\img\icons\sample-text.svg">
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 
