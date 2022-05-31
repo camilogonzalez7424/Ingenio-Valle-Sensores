@@ -11,6 +11,14 @@ const createServices = (app)=>{
         );
     });
 
+    app.post('/api/employee/create', (req, res)=>{
+        let employee = req.body;
+        employeeProvider.addEmployee(employee, (result)=>{
+            res.send(result);
+        });
+
+    });
+
 
 
 
