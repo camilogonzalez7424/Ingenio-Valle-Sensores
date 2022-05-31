@@ -5,11 +5,19 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-//Registrar
+//Servicios
 
 const employeeServices = require('./services/employeeService');
 employeeServices.createServices(app);
 
+const sectorServices = require('./services/sectorService');
+sectorServices.createServices(app);
+
+const sensorServices = require('./services/sensorService');
+sensorServices.createServices(app);
+
+const measurementServices = require('./services/measurementService');
+measurementServices.createServices(app);
 
 const PORT = process.env.PORT || 8080; 
 
