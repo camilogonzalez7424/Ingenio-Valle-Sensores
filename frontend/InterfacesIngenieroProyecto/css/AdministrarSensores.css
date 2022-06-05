@@ -1,0 +1,315 @@
+@font-face {
+    font-family: Pontano-Sans;
+    src: url(fuentes/PontanoSans-Regular.ttf);
+}
+
+
+body{
+    height: 800px;
+    background-image: url('/img/FondoEmpresa.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.userBtn{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    margin-left: 1150px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.userBtn-icono{
+    width: 100px;
+    height: 40px;
+    color: aliceblue;
+}
+
+
+
+.texto-usuarios{
+    color: aliceblue;
+    font-family: Pontano-Sans;
+}
+
+
+.userBtn:hover{
+    background-color: rgba(0, 0, 0, 0.798);
+    border-color: antiquewhite;
+}
+
+.menu-container{
+    margin-left: 5px;
+    margin-top: 10px;
+    position: absolute;
+    display: grid;
+    border-radius: 20px;
+    grid-template-rows: 65px;
+    grid-template-columns: 50px 100px;
+    grid-gap: 2 px;
+    grid-template-areas:
+    "area1 area2"
+}
+
+.menu-icon{
+    color: #000;
+    grid-area: area1;
+    justify-self: center;
+    margin-top: 5px;
+    width: 50px;
+    height: 40px;
+}
+
+.menu-icon:hover{
+    color: rgba(0, 0, 0, 0.572);
+    cursor: pointer;
+}
+.menu-text{
+    cursor: default;
+    grid-area: area2;
+    justify-content: center;
+    margin-top: 11px;
+}
+
+.decorativo-line-sensor{
+    border-radius: 3%;
+    width: 450px;
+    height: 3px;
+    background-color: rgba(196, 196, 196, 0.733);
+    position: absolute;
+    margin-left: 100px;
+    margin-right: 15px;
+    margin-top: -20px;
+    grid-area: area4;
+    justify-self:end;
+    align-self: center;
+    border-radius: 5%;
+}
+
+
+.datos-sensores-container{
+
+    margin: 150px 80px 80px 90px;
+    position: absolute;
+    display: grid;
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    grid-template-rows: 65px 65px 65px;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-gap: 2 px;
+    grid-template-areas:
+    "area1 area1 area5 area5 area2"
+    "area1 area1 area3 area3 area3"
+    "area1 area1 area4 area4 area4";
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+        0 0  0 2px rgb(255,255,255),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+
+
+.titulo-sensores{
+    padding-top: 2px;
+    font-size: 30px;
+    grid-area: area3;
+    font-family: Pontano-Sans;
+}
+
+.descripcion-sensores {
+    
+    grid-area: area4;
+    font-family: Pontano-Sans;
+    font-size: 15px;
+    justify-self:start;
+    align-self: center;
+}
+
+.icono-sensores {
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+    align-self: center;
+    grid-area: area1;
+}
+.flecha-sensores{
+    color: #000;
+    width: 50px;
+    height: 50px;
+    grid-area: area2;
+    margin-left: 230px;
+}
+.flecha-sensores:hover{
+    color: rgb(107, 107, 107);
+    cursor: pointer;
+
+}
+
+
+.container-principal{
+    border-radius: 20px;
+    width: 1220px;
+    height: 626px;
+    background-color: rgb(255, 255, 255);
+    opacity: 80%;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-top: 100px;
+    
+}
+
+
+
+
+
+
+
+
+.decorativo-line-gestionar{
+        border-radius: 20px;
+        width: 450px;
+        height: 3px;
+        background-color: rgba(196, 196, 196, 0.733);
+        position: absolute;
+        margin-left: 100px;
+        margin-right: 15px;
+        margin-top: -20px;
+        grid-area: area4;
+        justify-self:end;
+        align-self: center;
+        border-radius: 5%;
+}
+
+
+.datos-gestionar-container{
+
+    margin: 150px 80px 80px 720px;
+    position: absolute;
+    display: grid;
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    grid-template-rows: 65px 65px 65px;
+    grid-template-columns: 100px 100px 100px 100px 100px ;
+    grid-gap: 2 px;
+    grid-template-areas:
+    "area1 area1 area5 area5 area2"
+    "area1 area1 area3 area3 area3"
+    "area1 area1 area4 area4 area4";
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+
+
+.titulo-gestionar{
+    margin-left: 20px;
+    font-size: 30px;
+    grid-area: area3;
+    font-family: Pontano-Sans;
+    justify-self:start;
+    align-self: center;
+    
+}
+
+.descripcion-gestionar {
+    
+    grid-area: area4;
+    font-family: Pontano-Sans;
+    font-size: 15px;
+    justify-self:start;
+    align-self: center;
+}
+
+.icono-gestionar {
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+    align-self: center;
+    grid-area: area1;
+}
+.flecha-gestionar{
+    color: #000;
+    width: 50px;
+    height: 50px;
+    grid-area: area2;
+    justify-self: end;
+    align-self: start;
+    margin-left: 230px;
+}
+
+.flecha-gestionar:hover{
+    color: rgb(107, 107, 107);
+    cursor: pointer;
+}
+
+
+
+.info-sensores-container{
+
+    margin-top: 450px;
+    margin-left: 210px;
+    position: absolute;
+    display: grid;
+    border-radius: 20px;
+    grid-template-rows: 80px 80px 80px;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 5 px;
+    grid-template-areas:
+    "area1 area1 area1"
+    "area2 area2 area2"
+    "area3 area3 area4";
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+        0 0  0 2px rgb(255,255,255),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+        
+}
+
+.titulo-info-sensores{
+    border-bottom: black  3px solid;
+    font-family: Pontano-Sans;  
+    position: absolute;
+    grid-area: area1;
+    justify-self:start;
+    align-self: flex-start;
+    padding-top: 18px;
+    margin-left: 10px;
+}
+
+.titulo-info-sensores:hover{
+    color: rgb(107, 107, 107);
+    cursor: pointer;
+    border-bottom: rgb(107, 107, 107)  3px solid;
+}
+
+.decorativo-line-infosensor{
+    border-radius: 50%;
+    width: 880px;
+    height: 3px;
+    background-color: rgba(196, 196, 196, 0.733);
+    position: absolute;
+    grid-area: area1;
+    justify-self: center;
+    align-self: end;
+    border-radius: 5%;
+    margin-bottom: 35px;
+    opacity: 50%;
+}
+
+
+
+
+
+
+
