@@ -14,7 +14,16 @@ $('#cerrar-sesion').click(function(){
         confirmButtonText: 'Si, deseo salir!',
         cancelButtonText: 'No, cancelar!',
         reverseButtons: true
-        })
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                //console.log("SI");
+                 window.location.href = '/index.html';
+
+            } else{
+                console.log("Nel Perro");
+            }
+          })
 });
 
 $('#boton-Tecnico').click(function(){

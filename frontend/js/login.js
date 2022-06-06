@@ -32,20 +32,20 @@ loginMenu = ()=>{
         if(userN === username.value  && pass === password.value){
             switch (role){
                 case 1:
-                    window.alert(userN+" es Administrador.");
+                    window.alert("¡BIENVENIDO! "+" Administrador "+userN+".");
                    
                     window.location.href = "";
                     break;
                 case 2:
-                    window.alert(userN+" es Ingeníero.");
+                    window.alert("¡BIENVENIDO! "+" Ingeniero "+userN+".");
 
                     window.location.href = "MenuIngeniero.html";
                     break;
 
                 case 3:
-                    window.alert(userN+" es Técnico.");
+                    window.alert("¡BIENVENIDO! "+" Técnico "+userN+".");
 
-                    window.location.href = "";
+                    window.location.href = "MenuTecnico.html";
                     break;
                 default:
                     console.log("Holiwis");

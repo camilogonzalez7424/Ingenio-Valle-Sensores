@@ -1,12 +1,12 @@
 @font-face {
     font-family: Pontano-Sans;
-    src: url('fuentes/PontanoSans-Regular.ttf');
+    src: url(/frontend/fuentes/PontanoSans-Regular.ttf);
 }
 
 
 body{
     height: 1100px;
-    background-image: url('/img/FondoEmpresa.jpg');
+    background-image: url('/frontend/img/FondoEmpresa.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,7 +88,7 @@ body{
     justify-content: center;
     padding: 30px;
     border-radius: 20px;
-    background-image: url('/img/imagenFondoSensores.jpg');
+    background-image: url('/frontend/img/FondoSensores.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -161,7 +161,7 @@ body{
     border-bottom: rgb(107, 107, 107)  3px solid;
 }
 .text-grafica-scatter{
-    border-bottom: rgba(0, 0, 0, 0.741)  3px solid;
+    border-bottom: rgba(0, 0, 0, 0.649)  3px solid;
     font-family: Pontano-Sans;  
     grid-area: area8;
     justify-self:start;
@@ -237,6 +237,3 @@ body{
     font-family: Pontano-Sans;
     grid-area: area7;
 }
-
-
-

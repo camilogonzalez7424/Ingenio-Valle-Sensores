@@ -3,6 +3,8 @@ let minDiario = document.getElementById('minDato');
 let maxDiario = document.getElementById('maxDato');
 let promDiario = document.getElementById('promDato');
 let desvDiario = document.getElementById('desvDato');
+document.getElementById('grafica-bar-btn').style.color = "black"
+document.getElementById('grafica-scatter-btn').style.color = "rgb(0, 0, 0, 0.649)"
 
 var minHum = [2,10];var minTem = [2,10];
 var minC02 = [2,10];var minPh = [2,10];
@@ -52,6 +54,10 @@ var layout = {barmode: 'group'};
 Plotly.newPlot( lineDiv, data, layout);
 
 $('#grafica-scatter-btn').click(function(){
+    document.getElementById('grafica-bar-btn').style.color = "rgb(0, 0, 0, 0.649)"
+    document.getElementById('grafica-scatter-btn').style.color = "black"
+    document.getElementById('grafica-scatter-btn').style.borderColor = "black"
+    document.getElementById('grafica-bar-btn').style.borderColor = "rgb(0, 0, 0, 0.649)"
 
     var trace1  = {
         x: [2,6,10,12,14], //Aqui va el tiempo
@@ -86,6 +92,11 @@ $('#grafica-scatter-btn').click(function(){
 });
 
 $('#grafica-bar-btn').click(function(){
+    document.getElementById('grafica-bar-btn').style.color = "black"
+    document.getElementById('grafica-scatter-btn').style.color = "rgb(0, 0, 0, 0.649)"
+    document.getElementById('grafica-scatter-btn').style.borderColor = "rgb(0, 0, 0, 0.649)"
+    document.getElementById('grafica-bar-btn').style.borderColor = "black"
+
     var trace1  = {
         x: [2,10], //Aqui va el tiempo
         y: [40,50],  //Aqui va el valor medido
@@ -134,8 +145,4 @@ function dev(arr){
     
    // Returning the Standered deviation
     return Math.sqrt(sum / arr.length)
-}  
-
-
-
-
+} 
