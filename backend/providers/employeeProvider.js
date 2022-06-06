@@ -10,6 +10,17 @@ const getEmployee = (onResult)=>{
     });
 }
 
+const getEmployeeUsername = (userId,onResult)=>{
+    db.con.query("SELECT username, pass, roleId FROM employee_Trianix WHERE username = ('"+userId+"')", (err, result)=>{
+        if(!err){
+           // console.log(result);
+            onResult(result);
+        }
+
+
+    });
+}
+
 //En el front crear o hacer un apartado que muestre los roles: 1-administrador, 2-Ingeniero, 3-Tecnico
 //Hacer más intuitivo
 const addEmployee = (employee, onResult)=>{
@@ -26,3 +37,4 @@ const addEmployee = (employee, onResult)=>{
 
 module.exports.getEmployee = getEmployee;
 module.exports.addEmployee = addEmployee;
+module.exports.getEmployeeUsername = getEmployeeUsername;

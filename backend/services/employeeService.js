@@ -20,6 +20,12 @@ const createServices = (app)=>{
     });
 
 
+    app.get('/api/employee/p/:user', (req,res)=>{
+        let userId = req.params.user;
+        employeeProvider.getEmployeeUsername(userId, (result)=>{
+            res.send(result);
+        });
+    });
 
 
 
