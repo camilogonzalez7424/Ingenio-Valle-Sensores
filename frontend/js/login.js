@@ -39,7 +39,7 @@ loginMenu = ()=>{
                 case 2:
                     window.alert(userN+" es Ingeníero.");
 
-                    window.location.href = "";
+                    window.location.href = "MenuIngeniero.html";
                     break;
 
                 case 3:
