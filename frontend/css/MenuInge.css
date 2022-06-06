@@ -1,12 +1,12 @@
 @font-face {
     font-family: Pontano-Sans;
-    src: url(fuentes/PontanoSans-Regular.ttf);
+    src: url(/frontend/fuentes/PontanoSans-Regular.ttf);
 }
 
 
 body{
     height: 802px;
-    background-image: url('/img/FondoEmpresa.jpg');
+    background-image: url('/frontend/img/FondoEmpresa.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -178,7 +178,7 @@ body{
     height: 190px;
     width: 300px;
     grid-area: 6;
-    background-image: url('/img/logo.png');
+    background-image: url('/frontend/img/logo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
