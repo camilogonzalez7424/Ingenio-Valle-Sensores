@@ -65,7 +65,7 @@ loginMenu = ()=>{
 
 
 loginBack = () =>{
-    window.location.href = 'Ingenio-Valle-Sensores/index.html';
+    window.location.href = '/Ingenio-Valle-Sensores';
     
 }
 
