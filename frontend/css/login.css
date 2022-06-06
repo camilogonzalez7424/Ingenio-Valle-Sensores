@@ -1,5 +1,5 @@
 .styles {
-    background-image: url('frontend/img/fondo.png');
+    background-image: url('/Ingenio-Valle-Sensores/frontend/img/fondo.png');
     background-repeat: no-repeat;
     background-size: 100vw 105vh;
     overflow: hidden;
@@ -120,7 +120,7 @@ label {
 /*________________________________________________*/
 
 .btn {
-    background-image: url('/frontend/img/icons/user.png');
+    background-image: url('/Ingenio-Valle-Sensores/frontend/img/icons/user.png');
     background-repeat: no-repeat;
     height: 60px;
     width: 160px;
@@ -259,7 +259,7 @@ button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-chi
 /*___________________________________________________*/
 
 .back {
-    background-image: url('/frontend/img/icons/left-arrow.png');
+    background-image: url('/Ingenio-Valle-Sensores/frontend/img/icons/left-arrow.png');
     background-repeat: no-repeat;
     height: 60px;
     width: 50px;
