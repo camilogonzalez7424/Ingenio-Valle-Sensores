@@ -1,5 +1,5 @@
 .styles {
-    background-image: url('Ingenio-Valle-Sensores/frontend/img/fondo.png');
+    background-image: url('/Ingenio-Valle-Sensores/frontend/img/fondo.png');
     background-repeat: no-repeat;
     background-size: 100vw 105vh;
     overflow: hidden;
