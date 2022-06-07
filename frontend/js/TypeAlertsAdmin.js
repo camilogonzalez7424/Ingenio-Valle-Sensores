@@ -1,8 +1,20 @@
 let sensorToPut;
 let medidaToPut;
 const candidateContainer = document.getElementById('sensoresDate');
+const nombreUsuario =  window.localStorage.getItem('nombreUsuario');
 const nombreUs = 'holaaa';
+console.log(nombreUsuario);
 
+const getData = async()=>{
+    let url = `http://localhost:8080/api/measurement/all`;
+    let response = await fetch(url, {method:'GET'} );
+    let obj = await response.json();
+   // const names = [obj[0].president, obj[1].president, obj[2].president, obj[3].president, obj[4].president,obj[5].president,obj[6].president,obj[7].president,obj[8].president];
+   console.log(obj);
+   
+   candidateContainer.innerHTML = JSON.stringify(obj);
+   
+  }
 
 
 $('#cerrar-sesion').click(function(){
@@ -61,18 +73,18 @@ $('#boton-Sensor').click(function(){
     });
 
 cambiarPagina1 = () =>{
-    window.localStorage.setItem('nombreUs', nombreUs);
-    console.log(nombreUs);
+    window.localStorage.setItem('nombreUsuario', nombreUsuario);
+    console.log(nombreUsuario);
     window.location.href = 'AdministrarPersonalAdmin.html';
 };
 cambiarPagina2 = () =>{
-    window.localStorage.setItem('nombreUs', nombreUs);
-    console.log(nombreUs);
+    window.localStorage.setItem('nombreUsuario', nombreUsuario);
+    console.log(nombreUsuario);
     window.location.href = 'AdministrarSectorAdmin.html';
 };
 cambiarPagina3 = () =>{
-    window.localStorage.setItem('nombreUs', nombreUs);
-    console.log(nombreUs);
+    window.localStorage.setItem('nombreUs', nombreUsuario);
+    console.log(nombreUsuario);
     window.location.href = 'InformacionPersonalAdmin.html';
 };
 
@@ -81,3 +93,4 @@ adminpersonal.addEventListener('click',cambiarPagina1)
 adminsector.addEventListener('click',cambiarPagina2)
 inforpersonal.addEventListener('click',cambiarPagina3)
 
+getData();

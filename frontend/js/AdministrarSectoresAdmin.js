@@ -1,9 +1,9 @@
-const nombreUs = window.localStorage.getItem('nombreUs');
-console.log(nombreUs);
+const nombreUsuario = window.localStorage.getItem('nombreUsuario');
+console.log(nombreUsuario);
 
 cambiarPagina1 = () =>{
-    window.localStorage.setItem('nombreUs', nombreUs);
-    console.log(nombreUs);
+    window.localStorage.setItem('nombreUsuario', nombreUsuario);
+    console.log(nombreUsuario);
     window.location.href = 'CrearSectoresAdmin.html';
 };
 

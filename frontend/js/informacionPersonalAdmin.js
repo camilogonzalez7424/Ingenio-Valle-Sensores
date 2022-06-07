@@ -1,4 +1,4 @@
-const nombreUsuario = window.localStorage.getItem('nombreUs');
+const nombreUsuario = window.localStorage.getItem('nombreUsuario');
 const nombreText = document.getElementById('nombreU');
 const role = document.getElementById('User-txt4');
 const zona = document.getElementById('user-text5');
