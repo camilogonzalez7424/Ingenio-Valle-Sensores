@@ -1,9 +1,10 @@
 let sensorToPut;
 let medidaToPut;
 const candidateContainer = document.getElementById('sensoresDate');
-const nombreUsuario = window.localStorage.getItem('nombreUsuario');
+const nombreUsuario =  window.localStorage.getItem('nombreUsuario');
 
 console.log(nombreUsuario);
+
 const getData = async()=>{
     let url = `http://localhost:8080/api/measurement/all`;
     let response = await fetch(url, {method:'GET'} );
@@ -115,7 +116,7 @@ $('#cerrar-sesion').click(function(){
 });
 
 cambiarPagina = () =>{
-    window.localStorage.setItem('nombreUs', nombreUsuario);
+    window.localStorage.setItem('nombreUsuario', nombreUsuario);
     console.log(nombreUsuario);
     window.location.href = 'InformacionPersonalTec.html';
 };

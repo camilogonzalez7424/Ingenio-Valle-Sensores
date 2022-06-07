@@ -1,8 +1,7 @@
 const username = document.getElementById('username');
 const password = document.getElementById('password');
 
-
-
+const x = "hola";
 /*
 const getData = ()=>{
     let url = `http://localhost:8080/api/employee/p/${this.username.value}`;
@@ -30,26 +29,29 @@ loginMenu = ()=>{
         console.log(role);
 
         if(userN === username.value  && pass === password.value){
+
             switch (role){
                 case 1:
                     window.alert("¡BIENVENIDO! "+" Administrador "+userN+".");
                    
-                    window.localStorage.setItem('nombreUsuario',username);
+                    //window.localStorage.setItem('nombreUsuario',username);
 
                     window.location.href = "";
                     break;
                 case 2:
                     window.alert("¡BIENVENIDO! "+" Ingeniero "+userN+".");
 
-                    window.localStorage.setItem('nombreUsuario',username);
+                    window.localStorage.setItem('nombreUsuario1',data[0].username);
                     window.location.href = "MenuIngeniero.html";
                     break;
 
                 case 3:
                     window.alert("¡BIENVENIDO! "+" Técnico "+userN+".");
 
-                    window.localStorage.setItem('nombreUsuario',username);
+                    console.log(username);
+                    window.localStorage.setItem('nombreUsuario',data[0].username);
                     window.location.href = "MenuTecnico.html";
+
                     break;
                 default:
                     console.log("Holiwis");

@@ -1,3 +1,9 @@
+const nombreUsuario1 = window.localStorage.getItem('nombreUsuario1');
+
+console.log(nombreUsuario1);
+
+
+
 $('#cerrar-sesion').click(function(){
     const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
@@ -61,4 +67,13 @@ $('#boton-Sensor').click(function(){
         }
     }
     });
+
+    cambiarPagina = () =>{
+        window.localStorage.setItem('nombreUsuario1', nombreUsuario1);
+        console.log(nombreUsuario1);
+        window.location.href = 'InformacionPersonalInge.html';
+    };
+    
+    
+    infoPersonal.addEventListener('click',cambiarPagina)
 
