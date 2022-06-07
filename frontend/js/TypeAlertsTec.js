@@ -107,7 +107,7 @@ $('#cerrar-sesion').click(function(){
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
                 //console.log("SI");
-                 window.location.href = '/index.html';
+                 window.location.href = '/Ingenio-Valle-Sensores';
 
             } else{
                 console.log("Nel Perro");
