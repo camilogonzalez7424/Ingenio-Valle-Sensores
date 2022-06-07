@@ -10,6 +10,17 @@ const getEmployee = (onResult)=>{
     });
 }
 
+const getEmployeeInformation = (userN,onResult)=>{
+    db.con.query("SELECT name, zoneId, roleId FROM employee_Trianix WHERE username = ('"+userN+"')", (err, result)=>{
+        if(!err){
+           // console.log(result);
+            onResult(result);
+        }
+
+
+    });
+}
+
 const getEmployeeUsername = (userId,onResult)=>{
     db.con.query("SELECT username, pass, roleId FROM employee_Trianix WHERE username = ('"+userId+"')", (err, result)=>{
         if(!err){
@@ -38,3 +49,4 @@ const addEmployee = (employee, onResult)=>{
 module.exports.getEmployee = getEmployee;
 module.exports.addEmployee = addEmployee;
 module.exports.getEmployeeUsername = getEmployeeUsername;
+module.exports.getEmployeeInformation = getEmployeeInformation;

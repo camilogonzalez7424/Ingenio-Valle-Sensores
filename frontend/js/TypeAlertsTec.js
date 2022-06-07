@@ -1,7 +1,26 @@
+let sensorToPut;
+let medidaToPut;
+const candidateContainer = document.getElementById('sensoresDate');
+const nombreUsuario = window.localStorage.getItem('nombreUsuario');
+
+console.log(nombreUsuario);
+const getData = async()=>{
+    let url = `http://localhost:8080/api/measurement/all`;
+    let response = await fetch(url, {method:'GET'} );
+    let obj = await response.json();
+   // const names = [obj[0].president, obj[1].president, obj[2].president, obj[3].president, obj[4].president,obj[5].president,obj[6].president,obj[7].president,obj[8].president];
+   console.log(obj);
+   
+   candidateContainer.innerHTML = JSON.stringify(obj);
+   
+  }
+
+
 $('#boton-Tecnico').click(function(){
     let sensorID = document.getElementById('nombreSensor').value;
     sensorToPut = sensorID;
 
+    if(sensorID != ""){
     Swal.fire({
         title: 'Ingrese la medida observada',
         input: 'text',
@@ -24,10 +43,17 @@ $('#boton-Tecnico').click(function(){
         })
         //console.log("ando aun en show alert")
         registrarMedida()
+        getData();
         }
     })
 
-
+    }else{
+        Swal.fire({
+            icon: 'warning',
+            title: 'Oops...',
+            text: 'Ingrese el Id del sensor ¡Por favor!',
+          })
+    }
 });
 
 
@@ -36,6 +62,27 @@ registrarMedida = () =>{
     console.log(sensorToPut);
     console.log(medidaToPut);
 
+    let obj ={
+        sensorId: sensorToPut,
+        measurements: medidaToPut
+    };
+
+    let url = 'http://localhost:8080/api/measurement/register';
+    fetch(url, {
+        method:'POST',
+        headers:{
+            "Content-Type": "Application/json",
+        },
+        body: JSON.stringify(obj),
+    
+    
+    
+    
+    });
+
+
+    
+    
 }
 
 $('#cerrar-sesion').click(function(){
@@ -66,3 +113,14 @@ $('#cerrar-sesion').click(function(){
             }
           })
 });
+
+cambiarPagina = () =>{
+    window.localStorage.setItem('nombreUs', nombreUsuario);
+    console.log(nombreUsuario);
+    window.location.href = 'InformacionPersonalTec.html';
+};
+
+
+infoPersonal.addEventListener('click',cambiarPagina)
+
+getData();

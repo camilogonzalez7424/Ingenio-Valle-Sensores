@@ -34,17 +34,21 @@ loginMenu = ()=>{
                 case 1:
                     window.alert("¡BIENVENIDO! "+" Administrador "+userN+".");
                    
+                    window.localStorage.setItem('nombreUsuario',username);
+
                     window.location.href = "";
                     break;
                 case 2:
                     window.alert("¡BIENVENIDO! "+" Ingeniero "+userN+".");
 
+                    window.localStorage.setItem('nombreUsuario',username);
                     window.location.href = "MenuIngeniero.html";
                     break;
 
                 case 3:
                     window.alert("¡BIENVENIDO! "+" Técnico "+userN+".");
 
+                    window.localStorage.setItem('nombreUsuario',username);
                     window.location.href = "MenuTecnico.html";
                     break;
                 default:

@@ -27,6 +27,13 @@ const createServices = (app)=>{
         });
     });
 
+    app.get('/api/employee/info/:userN', (req,res)=>{
+        let userN = req.params.userN;
+        employeeProvider.getEmployeeInformation(userN, (result)=>{
+            res.send(result);
+        });
+    });
+
 
 
 
