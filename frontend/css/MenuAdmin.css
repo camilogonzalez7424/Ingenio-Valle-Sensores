@@ -6,7 +6,7 @@
 
 body{
     height: 802px;
-    background-image: url('/frontend/img/FondoEmpresa.png');
+    background-image: url('/Ingenio-Valle-Sensores/frontend/img/FondoEmpresa.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -178,7 +178,7 @@ body{
     height: 190px;
     width: 300px;
     grid-area: 6;
-    background-image: url('/frontend/img/logo.png');
+    background-image: url('/Ingenio-Valle-Sensores/frontend/img/logo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

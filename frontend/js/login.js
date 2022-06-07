@@ -36,7 +36,7 @@ loginMenu = ()=>{
                    
                     //window.localStorage.setItem('nombreUsuario',username);
 
-                    window.location.href = "";
+                    window.location.href = "MenuAdministrador.html";
                     break;
                 case 2:
                     window.alert("¡BIENVENIDO! "+" Ingeniero "+userN+".");
