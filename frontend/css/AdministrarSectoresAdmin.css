@@ -1,0 +1,224 @@
+@font-face {
+    font-family: Pontano-Sans;
+    src: url(/fuentes/PontanoSans-Regular.ttf);
+}
+
+
+body{
+    height: 800px;
+    background-image: url('/img/FondoEmpresa.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.userBtn{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    margin-left: 1150px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.userBtn-icono{
+    width: 100px;
+    height: 40px;
+    color: aliceblue;
+}
+
+
+
+.texto-usuarios{
+    color: aliceblue;
+    font-family: Pontano-Sans;
+}
+
+
+.userBtn:hover{
+    background-color: rgba(0, 0, 0, 0.798);
+    border-color: antiquewhite;
+}
+
+.menu-container{
+    margin-left: 5px;
+    margin-top: 10px;
+    position: absolute;
+    display: grid;
+    border-radius: 20px;
+    grid-template-rows: 65px;
+    grid-template-columns: 50px 100px;
+    grid-gap: 2 px;
+    grid-template-areas:
+    "area1 area2"
+}
+
+.menu-icon{
+    color: #000;
+    grid-area: area1;
+    justify-self: center;
+    margin-top: 5px;
+    width: 50px;
+    height: 40px;
+}
+
+.menu-icon:hover{
+    color: rgba(0, 0, 0, 0.572);
+    cursor: pointer;
+}
+.menu-text{
+    cursor: default;
+    grid-area: area2;
+    justify-content: center;
+    color: #000;
+    margin-top: 11px;
+}
+
+.decorativo-line-tecnicos{
+    border-radius: 3%;
+    width: 450px;
+    height: 3px;
+    background-color: rgba(196, 196, 196, 0.733);
+    position: absolute;
+    margin-left: 100px;
+    margin-right: 15px;
+    margin-top: 105px;
+    grid-area: area4;
+    justify-self:end;
+    align-self: center;
+    border-radius: 5%;
+}
+
+
+.datos-tecnicos-container{
+    margin-top: 50px;
+    display: grid;
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    grid-template-rows: 65px 65px 65px;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-gap: 2px;
+    grid-template-areas:
+    "area1 area1 area5 area5 area2"
+    "area1 area1 area3 area3 area3"
+    "area1 area1 area4 area4 area4";
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+
+
+.titulo-tecnicos{
+    cursor: default;
+    padding-top: 2px;
+    font-size: 30px;
+    grid-area: area3;
+    font-family: Pontano-Sans;
+    margin-left: 40px;
+}
+
+.descripcion-tecnicos {
+    cursor: default;
+    margin-right: 8px;
+    grid-area: area4;
+    font-family: Pontano-Sans;
+    font-size: 14px;
+    justify-self:start;
+    align-self: center;
+}
+
+.icono-tecnicos {
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+    align-self: center;
+    grid-area: area1;
+}
+.flecha-tecnicos{
+    color: #000;
+    width: 50px;
+    height: 50px;
+    grid-area: area2;
+    justify-self: flex-end;
+    margin-left: 230px;
+    
+}
+.flecha-tecnicos:hover{
+    color: rgb(107, 107, 107);
+    cursor: pointer;
+
+}
+
+.container-principal{
+    border-radius: 20px;
+    width: 1100px;
+    height: 626px;
+    background-color: rgba(255, 255, 255, 0.805);
+    margin-left: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
+}
+
+.info-tecnicos-container{
+
+
+    margin-top: 30px;
+
+    display: grid;
+    border-radius: 20px;
+    grid-template-rows: 80px 80px 80px;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 5 px;
+    grid-template-areas:
+    "area1 area1 area1"
+    "area2 area2 area2"
+    "area3 area3 area4";
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+        
+}
+
+.titulo-info-tecnicos{
+    
+    border-bottom: black  3px solid;
+    font-family: Pontano-Sans;  
+    position: absolute;
+    grid-area: area1;
+    justify-self:start;
+    align-self: flex-start;
+    padding-top: 18px;
+    margin-left: 10px;
+}
+
+.titulo-info-tecnicos:hover{
+    color: rgb(107, 107, 107);
+    cursor: pointer;
+    border-bottom: rgb(107, 107, 107)  3px solid;
+}
+
+.decorativo-line-infotecnicos{
+    border-radius: 50%;
+    width: 880px;
+    height: 3px;
+    background-color: rgba(196, 196, 196, 0.733);
+    position: absolute;
+    grid-area: area1;
+    justify-self: center;
+    align-self: end;
+    border-radius: 5%;
+    margin-bottom: 195px;
+    opacity: 50%;
+}
