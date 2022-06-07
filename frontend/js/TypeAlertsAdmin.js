@@ -1,7 +1,7 @@
 let sensorToPut;
 let medidaToPut;
 const candidateContainer = document.getElementById('sensoresDate');
-const nombreUsuario = window.localStorage.getItem('nombreUsuario');
+const nombreUs = 'holaaa';
 
 
 
@@ -25,31 +25,59 @@ $('#cerrar-sesion').click(function(){
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
                 //console.log("SI");
-                 window.location.href = '/index.html';
+                window.location.href = '/index.html';
 
             } else{
                 console.log("Nel Perro");
             }
-          })
+        })
 });
 
+$('#boton-Sensor').click(function(){
+    let inputValueSensor = document.getElementById('nombreSensor').value;
+    
+    if(inputValueSensor.length === 0){
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Rellene todos los campos',
+        })
+    }else{
+        if(isNaN(inputValueSensor)){
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'ID debe ser numerico',
+            })
+        }else{
+            Swal.fire({
+                icon: 'success',
+                title: 'Sensor añadido exitosamente',
+                showConfirmButton: false,
+                timer: 1500
+                })
+        }
+    }
+    });
+
 cambiarPagina1 = () =>{
-    window.localStorage.setItem('nombreUs', nombreUsuario);
-    console.log(nombreUsuario);
-    window.location.href = 'InformacionPersonalAdmin.html';
+    window.localStorage.setItem('nombreUs', nombreUs);
+    console.log(nombreUs);
+    window.location.href = 'AdministrarPersonalAdmin.html';
 };
 cambiarPagina2 = () =>{
-    window.localStorage.setItem('nombreUs', nombreUsuario);
-    console.log(nombreUsuario);
+    window.localStorage.setItem('nombreUs', nombreUs);
+    console.log(nombreUs);
     window.location.href = 'AdministrarSectorAdmin.html';
 };
 cambiarPagina3 = () =>{
-    window.localStorage.setItem('nombreUs', nombreUsuario);
-    console.log(nombreUsuario);
-    window.location.href = 'AdministrarPersonalAdmin.html';
+    window.localStorage.setItem('nombreUs', nombreUs);
+    console.log(nombreUs);
+    window.location.href = 'InformacionPersonalAdmin.html';
 };
 
 
-inforpersonal.addEventListener('click',cambiarPagina1)
+adminpersonal.addEventListener('click',cambiarPagina1)
 adminsector.addEventListener('click',cambiarPagina2)
-adminpersonal.addEventListener('click',cambiarPagina3)
+inforpersonal.addEventListener('click',cambiarPagina3)
+

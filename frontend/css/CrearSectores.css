@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Pontano-Sans;
+    src: url(/fuentes/PontanoSans-Regular.ttf);
+}
+
+
+body{
+    height: 800px;
+    background-image: url('/img/FondoEmpresa.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.userBtn{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    margin-left: 1150px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.userBtn-icono{
+    width: 100px;
+    height: 40px;
+    color: aliceblue;
+}
+
+
+
+.texto-usuarios{
+    color: aliceblue;
+    font-family: Pontano-Sans;
+}
+
+
+.userBtn:hover{
+    background-color: rgba(0, 0, 0, 0.798);
+    border-color: antiquewhite;
+}
+
+.menu-container{
+    margin-left: 5px;
+    margin-top: 10px;
+    position: absolute;
+    display: grid;
+    border-radius: 20px;
+    grid-template-rows: 65px;
+    grid-template-columns: 50px 100px;
+    grid-gap: 2 px;
+    grid-template-areas:
+    "area1 area2"
+}
+
+.menu-icon{
+    color: #000000;
+    grid-area: area1;
+    justify-self: center;
+    margin-top: 5px;
+    width: 50px;
+    height: 40px;
+}
+
+.menu-icon:hover{
+    color: rgba(0, 0, 0, 0.572);
+    cursor: pointer;
+}
+.menu-text{
+    cursor: default;
+    grid-area: area2;
+    justify-content: center;
+    margin-top: 11px;
+}
+
+
+.add-sensor-container{
+    margin-top: 70px;
+    margin-left: 105px;
+    width: 1100px;
+    height: 500px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px;
+    background-image: url('/img/FondoSensores.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.add-sensor-container *{
+    margin: 90px 10px 5px 0px;
+}
+
+.titulo-container{
+    margin-top: 10px;
+    font-family: Pontano-Sans;
+    font-size: 30px;
+}
+
+.inputdata{
+    background-color: #00000000;
+    border-top: #000000;
+    border-left: #ffffff;
+    border-right: #ffffff;
+    width: 80%;
+}
+
+.options{
+    font-family: Pontano-Sans;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-right: 720px;
+}
+.options:hover{
+    border-color: #000000;
+
+}
+
+#boton-Sensor{
+    padding: 1em 1.8em;
+    margin: 81px 0px 0px 0px;
+    outline: none;
+    border: 1px solid #303030;
+    background: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-family: Pontano-Sans;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: right;
+}
+
+#boton-Sensor:hover{
+    background-color: rgba(0, 0, 0, 0.798);
+    border-color: antiquewhite;
+}
+

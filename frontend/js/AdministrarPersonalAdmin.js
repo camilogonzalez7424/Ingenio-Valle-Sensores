@@ -1,20 +1,17 @@
-const nombreUsuario = window.localStorage.getItem('nombreUsuario');
+const nombreUs = window.localStorage.getItem('nombreUs');
+console.log(nombreUs);
 
 cambiarPagina1 = () =>{
-    window.localStorage.setItem('nombreUs', nombreUsuario);
-    console.log(nombreUsuario);
-    window.location.href = 'AdministrarTecnicosAdmin.html';
-};
-cambiarPagina2 = () =>{
-    window.localStorage.setItem('nombreUs', nombreUsuario);
-    console.log(nombreUsuario);
+    window.localStorage.setItem('nombreUs', nombreUs);
+    console.log(nombreUs);
     window.location.href = 'AdministrarIngenierosAdmin.html';
 };
-cambiarPagina3 = () =>{
-    window.localStorage.setItem('nombreUs', nombreUsuario);
-    console.log(nombreUsuario);
-    window.location.href = 'AdministrarPersonalAdmin.html';
+cambiarPagina2 = () =>{
+    window.localStorage.setItem('nombreUs', nombreUs);
+    console.log(nombreUs);
+    window.location.href = 'AdministrarIngenierosAdmin.html';
 };
+
 
 
 flechatecnicos.addEventListener('click',cambiarPagina1)
