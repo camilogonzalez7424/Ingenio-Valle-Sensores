@@ -75,5 +75,5 @@ $('#boton-Sensor').click(function(){
     };
     
     
-    infoPersonal.addEventListener('click',cambiarPagina)
+    infoInge.addEventListener('click',cambiarPagina);
 
