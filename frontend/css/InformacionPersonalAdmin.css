@@ -1,12 +1,12 @@
 @font-face {
     font-family: Pontano-Sans;
-    src: url(/fuentes/PontanoSans-Regular.ttf);
+    src: url(/frontend/fuentes/PontanoSans-Regular.ttf);
 }
 
 
 body{
     height: 600px;
-    background-image: url('/img/FondoEmpresa.png');
+    background-image: url('/frontend/img/FondoEmpresa.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,7 +106,7 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    background-image: url('/img/FondoSensores.png');
+    background-image: url('/frontend/img/FondoSensores.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,7 +127,7 @@ body{
 
     display: grid;
     border-radius: 20px;
-    background-image: url('/img/FondoSensores.png');
+    background-image: url('/frontend/img/FondoSensores.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
