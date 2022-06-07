@@ -1,0 +1,185 @@
+@font-face {
+    font-family: Pontano-Sans;
+    src: url(/frontend/fuentes/PontanoSans-Regular.ttf);
+}
+
+
+body{
+    height: 802px;
+    background-image: url('/img/FondoEmpresa.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.userBtn{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    margin-left: 1150px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.userBtn-icono{
+    width: 100px;
+    height: 40px;
+    color: aliceblue;
+}
+
+
+
+.texto-usuarios{
+    color: aliceblue;
+    font-family: Pontano-Sans;
+}
+
+
+.userBtn:hover{
+    background-color: rgba(0, 0, 0, 0.798);
+    border-color: antiquewhite;
+}
+
+.items-menu{
+    top: 0px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 120px 120px 120px 120px 120px 200px; 
+    grid-template-columns: 150px 150px;
+    background-color: rgba(0, 0, 0, 0.609);
+}
+
+.item1-menu{
+    justify-content: center;
+    align-items: center;
+    grid-area: 1;
+    height: 120px;
+    width: 300px;
+}
+
+.menu-icon{
+    float: left;
+    margin-top: 30px;
+    height: 60px;
+    width: 60px;
+    color: aliceblue;
+}
+
+.menu-tittle{   
+    margin-top: 45px;
+    margin-left: 100px;
+    justify-content: center;
+    align-items: flex-start;
+    color: aliceblue;
+}
+
+
+
+.item2-menu{
+    height: 100px;
+    width: 300px;
+    grid-area: 2;
+    background-color: rgba(0, 0, 0, 0.632);
+}
+.item2-menu:hover{
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.user-icon{
+    float: left;
+    padding-top: 30px;
+    height: 80px;
+    width: 60px;
+    color: aliceblue;
+}
+.user-text{  
+    padding-top: 40px;
+    margin-left: 100px;
+    color: aliceblue;
+}
+
+
+.item3-menu{
+    margin-left: 0px;
+    padding-left: 0px;
+    height: 100px;
+    width: 300px;
+    grid-area: 3;
+    background-color: rgba(0, 0, 0, 0.632);
+}
+.item3-menu:hover{
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.sensor-icon{
+    float: left;
+    padding-top: 30px;
+    height: 80px;
+    width: 60px;
+    color: aliceblue;
+}
+.sensor-text{
+    padding-top: 40px;
+    margin-left: 100px;
+    color: aliceblue;
+}
+
+
+.item4-menu{
+    height: 100px;
+    width: 300px;
+    grid-area: 5;
+    background-color: rgba(0, 0, 0, 0.632);
+}
+.item4-menu:hover{
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.exit-icon{
+    float: left;
+    padding-top: 30px;
+    height: 80px;
+    width: 60px;
+    color: aliceblue;
+}
+.exit-text{  
+    padding-top: 40px;
+    margin-left: 100px;
+    color: aliceblue;
+}
+
+.item5-menu{
+    height: 100px;
+    width: 300px;
+    grid-area: 4;
+    background-color: rgba(0, 0, 0, 0.632);
+}
+.item5-menu:hover{
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.person-icon{
+    float: left;
+    padding-top: 30px;
+    height: 80px;
+    width: 60px;
+    color: aliceblue;
+}
+.person-text{  
+    padding-top: 40px;
+    margin-left: 100px;
+    color: aliceblue;
+}
+
+.item6-menu{
+    height: 190px;
+    width: 300px;
+    grid-area: 6;
+    background-image: url('/img/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
