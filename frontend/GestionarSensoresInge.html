@@ -28,20 +28,21 @@
         </button>
 
         <div class = "add-sensor-container">
+            <br><br>
             <div class = "titulo-container">Sensores</div>
-            <input type="text" placeholder="ID del sensor" id="nombreSensor" class="inputdata"/>
-            <select class="options">
+            <input type="text" placeholder="ID de la zona" id="nombreZona" class="inputdata"/>
+            <select class="options" id="typeSensor">
                 <option value="1">PH</option>
                 <option value="2" selected>Humedad</option> <!-- Opción por defecto -->
                 <option value="3">Co2</option>
                 <option value="3">Temperatura</option>
             </select>
-            <button id="boton-Sensor">Añadir</button>
+            <button id="añadir">Añadir</button>
         </div>
         
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="fuentes/package/dist/sweetalert2.all.min.js"></script>
-        <script src="js/TypeAlertsIng.js"></script>
+        <script src ="js/SensoresInge.js"></script>
     </body>
 
     </html>

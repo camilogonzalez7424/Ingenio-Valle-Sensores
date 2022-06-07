@@ -11,5 +11,15 @@ const createSensor = (sensor, onResult)=>{
     });
 }
 
+const getSensor = (onResult)=>{
+    db.con.query('SELECT * FROM sensor_Trianix order by id', (err, result)=>{
+        if(!err){
+            onResult(result);
+        }
 
+
+    });
+}
+
+module.exports.getSensor=getSensor;
 module.exports.createSensor = createSensor;
